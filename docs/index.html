@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>備忘録ノート</title>
-<meta name="description" content="備忘録ノート｜アイデアとTODOを書き留めた備忘録。公開メモ0件（アイデア0件・TODO0件）。">
+<meta name="description" content="備忘録ノート｜アイデアとTODOを書き留めた備忘録。公開メモ1件（アイデア1件・TODO0件）。">
 <meta name="robots" content="index,follow">
 <meta property="og:type" content="website">
 <meta property="og:title" content="備忘録ノート">
-<meta property="og:description" content="備忘録ノート｜アイデアとTODOを書き留めた備忘録。公開メモ0件（アイデア0件・TODO0件）。">
+<meta property="og:description" content="備忘録ノート｜アイデアとTODOを書き留めた備忘録。公開メモ1件（アイデア1件・TODO0件）。">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://xiangdameitian-cpu.github.io/memo/"><meta property="og:url" content="https://xiangdameitian-cpu.github.io/memo/">
@@ -90,17 +90,154 @@ a { color: var(--accent); text-underline-offset: 2px; }
 <header class="masthead">
 <h1>備忘録ノート</h1>
 <p>アイデアとTODOを書き留めている備忘録です。</p>
-<p class="stats">公開メモ 0 件 · 最終更新 <time datetime="2026-10-14T00:00:00.000Z">2026/10/14</time></p>
+<p class="stats">公開メモ 1 件 · 最終更新 <time datetime="2026-10-14T01:20:32.352Z">2026/10/14</time></p>
 </header>
 <div class="tools" id="tools" hidden>
 <div class="search" role="search"><label for="q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">メモを検索</label><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="5"></circle><path d="M11 11l3.5 3.5" stroke-linecap="round"></path></svg><input id="q" type="search" placeholder="キーワードで検索" autocomplete="off"></div>
+<div class="facet" role="group" aria-label="カテゴリで絞り込み"><span class="facet-label">カテゴリ</span><button type="button" class="chip" data-filter-cat="未分類" aria-pressed="false">未分類 <span class="stats">1</span></button></div>
+<div class="facet" role="group" aria-label="タグで絞り込み"><span class="facet-label">タグ</span><button type="button" class="chip" data-filter-tag="メガテン" aria-pressed="false">#メガテン <span class="stats">1</span></button></div>
 </div>
 <main>
-<p class="result" id="result" aria-live="polite">全 0 件</p>
+<p class="result" id="result" aria-live="polite">全 1 件</p>
 <div class="list" id="list">
+<article class="memo" id="m-ed589bf3-dada-44c9-b22f-017c27bc8744" data-cat="未分類" data-tags="[&quot;メガテン&quot;]">
+<div class="memo-head"><h2><a href="#m-ed589bf3-dada-44c9-b22f-017c27bc8744">真女神転生4で、守護者の眼光をMP回復無しで3連発できる悪魔2選</a></h2><span class="kind kind-idea">アイデア</span></div>
+<div class="memo-body">守護者の眼光は点滅プレスターンアイコンを3つ増やす、という言わずと知れたメガテン4のぶっ壊れスキルだが、
+MPを255消費と大量に食う事が欠点であり、連発するには主人公・&quot;回復アイテム使用可能スキルを持つ仲魔&quot;が
+永遠にMP回復し続けないといけないのが欠点であった。
 
+今宵、それを解決する。
+
+前提条件
+・アプリでライト悪魔合体を解禁していること
+・該当DLCを購入し倒していること
+
+ライト合体では専用スキルを引き継げる
+
+やり方としては、「ライト合体では専用スキルを引き継げる」のでこれを活用する。
+
+【飛ばしOK】HP型・MP型・バランス型の解説
+
+この項は作成には要らない知識なので、読み飛ばしてもらって構わない。
+メガテン4の仲魔は、各悪魔毎にHP/MPの成長法則があり、これをHP型・MP型・バランス型、と呼んでいる。
+ただストーリークリア程度ならこの知識は不要。確定先制され、耐久がある程度求められる魔人と戦う時は頭に入れてもいい程度
+
+なお攻略本には計算式などはない。
+・HP型：HP:MPがおよそ5:1
+・バランス型：HP:MPがおよそ2:1
+・MP型：HP:MPがおよそ1:1
+
+・活泉/魔脈の効果
+一分～三分でそれぞれ+10～30%(小数点以下切り捨て)
+複数習得させた場合は加算(一分+二分+三分だと+60%)
+
+【本題】「MP型で、魔脈3種を持てる」悪魔2選
+
+・ゴモリー：1～3分の魔脈が必須で最終MPは820
+・ブラックマリア：2～3分の魔脈が必須で最終MPは765
+
+【手順】公の影×悪魔をライト合体させてブラックマリア・ゴモリーを作りたいので、以下の手順で元になる悪魔を作成する。
+
+・ゴモリー
+①【妖魔】ヴォジャノーイ（Lv.6+3） で「1の魔脈」を覚え
+②【天女】センリと合体で【妖精】ジャックランタンを作成
+③更に【妖鳥】コカクチョウと合体で、「1の魔脈」を継承したプリンシバリティが完成
+
+・ブラックマリア
+①【夜魔】ワイルド・ハント（Lv.53+3） で「3の魔脈」を覚え
+②アーシーズとの精霊合体を数回し【夜魔】リリムを作成
+③【夜魔】リリムと【天使】パワーを合体で、「3の魔脈」を継承したスカアハが完成
+
+ここまで準備できたらすぐ公の影とライト合体...とはいかず、こちらも準備が必要。
+
+【公の影の合体手順】
+
+何故なら、ライト合体は戦闘中に行うため、「スキル継承できるがスキルを選択できない」という仕様がある。
+スキルは8枠なので継承を考慮して6枠に納める必要があり、継承先の悪魔のスキル（合体後）を必ず継承するので
+上記2体が選ばれた理由である。
+
+公の影の初期スキルは
+・怨敵調伏
+・銃貫通
+・火炎吸収
+
+なので公の影作成時、
+①あらかじめ素材となる悪魔「マサカド、ハチマン、アマテラス、オオミツヌ」いずれかに1＆2分の魔脈を継承。
+②初期スキルである「怨敵調伏、銃貫通、火炎吸収」を除いて、1＆2分の魔脈のみを継承。
+③公の影をLv99まで上げると
+・一分の魔脈
+・二分の魔脈
+・氷結吸収
+・電撃吸収
+・衝撃吸収
+・守護者の眼光（Lv99）
+これで6枠になる。
+(なお、最初から同吸収を1つを継承させると守護者の眼光の習得はLv86で済み、3つ継承ならもっと速く覚えます)
+
+これで継承先の悪魔で「三分の魔脈＋初期スキル」で8枠に納まる
+
+【後は合体するだけ】
+素材が揃ったら戦闘中にライト合体をするだけで完成。
+あとはlv99にするだけ。
+
+ゴモリーは初期スキルが2つありますがLvアップで三分の魔脈覚えさせる事ができるので、
+素材であるプリンシパリティは1か2分の魔脈のみだけを継承でMP問題を解決
+
+特にブラックマリアは１分の魔脈を継承させなくても3発分のMPに届くので、1枠は自由。
+アンティクトンや天使長の号令にしても問題ありません。
+
+【注意点】
+
+上記2体はMP型の悪魔なので、HPが低め。
+普段使いは問題ないが、確定先制・耐久が必要な魔人と戦う時は注意。
+HPが高い仲魔からチェンジするなどして対策するべし。
+
+【別解】仲魔スキル増設は後に回す方法
+・この手順だとライト合体時のスキル継承がやりやすくなるが、
+そもそもクリア後難易度まで仲魔スキル4枠で来れるのかは謎である。
+
+ライト継承考慮する場合は仲魔スキル増設は後に回した方が良い。
+
+具体例としては、公の影を魔脈3つと後で消す1スキルで作成
+→育成して眼光取得すると眼光・魔脈・魔脈・魔脈の4スキルで仮完成するので全書登録
+→仲魔スキル増設を取得
+→ライト合体
+
+以上の手順で必要なスキルを継承しやすくなるが、仲魔スキル増設を先に取得すると4スキルで仮完成させることが不可能になる。
+
+この手順が有効なのは「Lvアップで習得し、かつ2つ目以降に専用スキルがある場合」
+(といき(デモニホ)、閂投げ(ウリエル)、シェオルの蛇(ラファエル)、守護者の眼光(公の影))
+
+以上
+
+解説しているリンク先
+<a href="https://w.atwiki.jp/megaten4/?cmd=word&amp;word=守護者の眼光&amp;pageid=43" rel="noopener nofollow ugc">https://w.atwiki.jp/megaten4/?cmd=word&amp;word=守護者の眼光&amp;pageid=43</a>
+
+<a href="https://ameblo.jp/drink592/entry-12763053528.html" rel="noopener nofollow ugc">https://ameblo.jp/drink592/entry-12763053528.html</a>
+ctrl+F で「魔脈」で検索
+
+<a href="https://note.com/sedo_tiger2434/n/nd2f60664e582" rel="noopener nofollow ugc">https://note.com/sedo_tiger2434/n/nd2f60664e582</a>
+私が書きました
+
+検索用語
+メガテン4 悪魔合体ライト 守護者の眼光
+
+ゲーム
+アトラス
+メガテン
+真女神転生
+真・女神転生
+ATLUS
+真女神転生4
+メガテン4
+女神転生4
+真・女神転生4
+守護者の眼光
+悪魔合体ライト</div>
+<div class="memo-meta"><span class="meta-cat">未分類</span><span class="meta-tag">#メガテン</span><time datetime="2026-10-14T01:20:32.352Z">2026/10/14 更新</time></div>
+</article>
 </div>
-<div class="empty" id="empty" >まだ公開しているメモはありません。</div>
+<div class="empty" id="empty" hidden>条件に合うメモはありません。</div>
 </main>
 <footer class="foot">© 備忘録ノート</footer>
 </div>
