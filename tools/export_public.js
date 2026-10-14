@@ -20,7 +20,10 @@ const data = JSON.parse(m[1]);
 
 const bundle = fs.readFileSync(path.join(__dirname, 'public-site.bundle.js'), 'utf8');
 const PublicSite = new Function(bundle + '\nreturn PublicSite;')();
-const { html, count } = PublicSite.build(data, { siteUrl: siteUrl || undefined });
+// 「最終更新」は公開メモの最新の更新日時にする（メモに変更がない日はファイルが変わらない）
+const pubs = PublicSite.publicMemos(data.memos);
+const generatedAt = pubs.length ? pubs[0].updatedAt : '2026-10-14T00:00:00.000Z';
+const { html, count } = PublicSite.build(data, { siteUrl: siteUrl || undefined, generatedAt });
 
 fs.mkdirSync(outDir, { recursive: true });
 fs.writeFileSync(path.join(outDir, 'index.html'), html);
@@ -28,7 +31,7 @@ const robots = ['User-agent: *', 'Allow: /'];
 if (siteUrl) {
   const base = siteUrl.endsWith('/') ? siteUrl : siteUrl + '/';
   robots.push('Sitemap: ' + base + 'sitemap.xml');
-  const lastmod = new Date().toISOString().slice(0, 10);
+  const lastmod = generatedAt.slice(0, 10);
   fs.writeFileSync(path.join(outDir, 'sitemap.xml'),
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>${base}</loc><lastmod>${lastmod}</lastmod></url>\n</urlset>\n`);
 }
